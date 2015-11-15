@@ -11,9 +11,9 @@ public class HelloWorld extends HttpServlet {
             throws ServletException, IOException {
         String message = System.getenv("POWERED_BY");
         if (message == null) {
-            message = "Deis";
+            message = "HAL 9001";
         }
-        resp.getWriter().print("Powered by " + message);
+        resp.getWriter().print("# Greetings from" + message+"!");
     }
 
     public static void main(String[] args) throws Exception{
